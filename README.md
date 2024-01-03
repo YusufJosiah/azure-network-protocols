@@ -20,33 +20,40 @@ Observe various network traffic to and from Azure Virtual Machines with Wireshar
 
 <h2>High-Level Steps</h2>
 
-- Step 1
-- Step 2
-- Step 3
-- Step 4
+1. Create and Deploy Resources and Define Security Rules: Create NSGs with specific inbound and outbound security rules to allow or deny traffic. These rules can be based on source IP addresses, destination IP addresses, ports, and protocols.
+2. Grouping Resources: Consider grouping resources based on their functions or roles. Create NSGs that can be associated with multiple VMs or subnets, making management more efficient.
+3. Create Network Security Groups: Create NSGs with the predefined security rules. Associate the NSGs with the respective Azure Virtual Machines or subnets. This association enforces the defined rules for inbound and outbound traffic.
+4. Verify the rules: Test the NSGs by sending traffic between the VMs. Verify that the intended traffic is allowed and unauthorized traffic is denied as per the defined rules.
 
 <h2>Actions and Observations</h2>
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<p>  
+<img src="https://i.imgur.com/lxsKnw8.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
-
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Create and Deploy Resources - Two Virtual Machines - VM1 and VM2 created.
 </p>
 <br />
 
 <p>
-<![image](https://github.com/yusufjosiah/azure-network-protocols/assets/154345369/f6b55ea8-58f3-4f96-a0da-ee64178f8749)/>
+<img src="https://i.imgur.com/f9o4Dh1.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Capturing and observing the internet traffic.
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/1EeCbi1.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Edit the inbound rules to deny traffic below ports number 300.
+</p>
+
+<p>
+<img src="https://i.imgur.com/KtPZjc2.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Observing the new inbound rules being inforce.
 </p>
 <br />
